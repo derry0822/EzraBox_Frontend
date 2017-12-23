@@ -6,7 +6,7 @@
   <title>EzraBox</title>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  <script src="https://use.fontawesome.com/c00b365a14.js"></script>
+  <script src="js/fontawesome-all.min.js" type="text/javascript"></script>
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <!-- Main CSS -->
@@ -15,7 +15,7 @@
 <body>
   <div class="container-fluid">
     <div id="nav">
-      <img src="assets/nintendo.png" alt="logo">
+      <img src="assets/Ezra_Box_logo_text.svg" alt="logo">
       <ul>
         <li><a href="#"> QUIZ </a></li>
         <li><a href="#"> RENT </a></li>
@@ -33,20 +33,56 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Look for places to store" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
+      <div id="arrow">
+        <a href="#quiz"><i class="fas fa-chevron-down" style="font-size: 4em; color: white;"></i></a>
+      </div>
     </div>
-    <div id="quiz">
-      <div id="takeit">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-angle-down fa-stack-2x"></i>
-          <i class="fa fa-angle-down fa-stack-2x" id="arrow2"></i>
-        </span>
-        <a href="#"><h2> Take the quiz </h2></a>
+    <div class="section" id="quiz">
+      <h2> Take the Quiz </h2>
+    </div>
+    <div class="section" id="storage">
+      <h2> Find affordable storage </h2>
+      <div class="storage-sec">
+        <img src="assets/profile.svg" alt="house">
+      </div>
+      <div class="storage-sec">
+        <img src="assets/search.svg" alt="search">
+      </div>
+      <div class="storage-sec">
+        <img src="assets/request.svg" alt="request">
+      </div>
+      <div class="storage-sec">
+        <img src="assets/box.svg" alt="box">
+      </div>
+    </div>
+    <div class="section" id="space">
+      <h2> Earn cash with your extra space </h2>
+    </div>
+    <div class="section" id="faq">
+      <h2> FAQs </h2>
+    </div>
+    <div class="footer container-fluid">
+      <div class="row">
+        <div class="footer-col col-sm" id="copyright"><p>Copyright &copy; 2017 Ezra Box </p></div>
+        <div class="footer-col col-sm" id="media">
+          <a href="#"><i class="fab fa-facebook" style="font-size: 2em; margin-right: 30px;"></i></a>
+          <a href="#"><i class="fas fa-envelope" style="font-size: 2em; margin-left: 30px;"></i></a>
+        </div>
+        <div class="footer-col col-sm" id="terms"><a href="#"><p>Terms & Conditions</p></a></div>
       </div>
     </div>
   </div>
   <!-- JQuery -->
   <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+  <!-- Other External Scripts -->
+  <script src="js/smooth-scroll.min.js" type="text/javascript"></script>
   <!-- Main JS -->
   <script src="js/main.js" type="text/javascript"></script>
+  <!-- Smooth Scroll -->
+  <script>
+    var scroll = new SmoothScroll('a[href="#quiz"]', {
+      speed: 800
+    });
+  </script>
 </body>
 </html>
